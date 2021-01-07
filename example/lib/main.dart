@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
   String _expMonth = "";
   String _expYear = "";
   String _cvc = "";
-  String _token = "";
+  Token _token;
   String _deviceSessionId = "";
 
   @override
@@ -70,23 +70,18 @@ class _MyAppState extends State<MyApp> {
   Future<void> submit() async {
     if (_formKey.currentState.validate()) {
       _formKey.currentState.save();
-
-      String token;
-
+      Token token;
       try {
-        token = await FlutterOpenpay.tokenizeCard(
+        FlutterOpenpay openpay = FlutterOpenpay(publicApiKey: 'pk_3a66482b770a4d1abd5bf21aaf01dffb', merchantId: 'mop7w9rqjzbkhcmwcoob', productionMode: false);
+        token = await openpay.tokenizeCard(
           cardholderName: _name,
           cardNumber: _number,
           cvv: _cvc,
           expiryMonth: _expMonth,
           expiryYear: _expYear,
-          publicApiKey: 'pk_3a66482b770a4d1abd5bf21aaf01dffb',
-          merchantId: 'mop7w9rqjzbkhcmwcoob',
-          productionMode: false,
         );
       } catch (e) {
         print(e.toString());
-        token = e.message;
       }
 
       setState(() {
@@ -98,10 +93,9 @@ class _MyAppState extends State<MyApp> {
   Future<void> requestDeviceSessionId() async {
     String deviceSessionId;
     try {
-      deviceSessionId = await FlutterOpenpay.getDeviceSessionId(
-        merchantId: 'm3ts0hkttkzst0ygk8ha',
-        publicApiKey: 'pk_3a6c4e052213416c84c9f2da10bcb7d2',
-        productionMode: false,
+      FlutterOpenpay openpay = FlutterOpenpay(merchantId: 'm3ts0hkttkzst0ygk8ha', publicApiKey: 'pk_3a6c4e052213416c84c9f2da10bcb7d2', productionMode: false,);
+      deviceSessionId = await openpay.getDeviceSessionId(
+        
       );
       setState(() {
         _deviceSessionId = deviceSessionId;
@@ -266,7 +260,7 @@ class _MyAppState extends State<MyApp> {
                   cardValidationRow(),
                   tokenizeCardButton(),
                   SizedBox(height: 16),
-                  Text("Token: $_token"),
+                  Text("Token: ${_token.id}"),
                   deviceSessionIdButton(),
                   SizedBox(height: 16),
                   Text("Device session id: $_deviceSessionId"),

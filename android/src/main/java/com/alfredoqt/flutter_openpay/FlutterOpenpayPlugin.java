@@ -74,6 +74,8 @@ public class FlutterOpenpayPlugin implements MethodCallHandler {
             handleTokenizeCard(call, result);
         } else if (call.method.equals("getDeviceSessionId")) {
             handleGetDeviceSessionId(call, result);
+        } else if (call.method.equals("getDeviceSessionId")) {
+            handleGetDeviceSessionId(call, result);
         } else {
             result.notImplemented();
         }
@@ -141,4 +143,6 @@ public class FlutterOpenpayPlugin implements MethodCallHandler {
         }
         result.error("ERROR_UNABLE_TO_GET_SESSION_ID", "The device session id could not be generated.", null);
     }
+
+    //private void handle
 }
