@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c25fa81a-5aa8-4bfa-919a-2e9cf21bc1cf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/card.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_openpay.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_openpay.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/token.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter_openpay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_openpay.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +55,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="541" y="183" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1610036102143" />
+    <state width="1340" height="207" key="GridCell.Tab.0.bottom" timestamp="1610042518327">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1340" height="207" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1610042518327" />
+    <state width="1340" height="207" key="GridCell.Tab.0.center" timestamp="1610042518327">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1340" height="207" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1610042518327" />
+    <state width="1340" height="207" key="GridCell.Tab.0.left" timestamp="1610042518326">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1340" height="207" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1610042518326" />
+    <state width="1340" height="207" key="GridCell.Tab.0.right" timestamp="1610042518327">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1340" height="207" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1610042518327" />
     <state x="269" y="73" key="SettingsEditor" timestamp="1610040584857">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

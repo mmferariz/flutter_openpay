@@ -144,5 +144,11 @@ public class FlutterOpenpayPlugin implements MethodCallHandler {
         result.error("ERROR_UNABLE_TO_GET_SESSION_ID", "The device session id could not be generated.", null);
     }
 
-    //private void handle
+    private void handleCardValidator(MethodCall call, Result result){
+        Map<String, Object> arguments = call.arguments();
+        String merchantId = (String) arguments.get("merchantId");
+        boolean productionMode = (boolean) arguments.get("productionMode");
+
+
+    }
 }

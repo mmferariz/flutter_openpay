@@ -260,7 +260,7 @@ class _MyAppState extends State<MyApp> {
                   cardValidationRow(),
                   tokenizeCardButton(),
                   SizedBox(height: 16),
-                  Text("Token: ${_token.id}"),
+                  Text("Token: ${_token?.id}"),
                   deviceSessionIdButton(),
                   SizedBox(height: 16),
                   Text("Device session id: $_deviceSessionId"),

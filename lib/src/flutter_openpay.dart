@@ -56,9 +56,11 @@ class FlutterOpenpay {
 
     String _merchantBaseUrl = '$baseUrl/v1/$merchantId';
 
+    var url = Uri.https(_merchantBaseUrl, "tokens");
+
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('$publicApiKey:'));
 
-    Response response = await post('$_merchantBaseUrl/tokens', headers: {
+    Response response = await post(url, headers: {
       'Content-type': 'application/json',
       'Authorization': basicAuth,
       'Accept': 'application/json',
