@@ -52,7 +52,7 @@ class FlutterOpenpay {
     @required String expiryMonth,
     @required String expiryYear,
   }) async{
-    String baseUrl = productionMode ? 'https://api.openpay.mx' : 'https://sandbox-api.openpay.mx';
+    String baseUrl = productionMode ? 'api.openpay.mx' : 'sandbox-api.openpay.mx';
 
     String _merchantBaseUrl = '$baseUrl/v1/$merchantId';
 
