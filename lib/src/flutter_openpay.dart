@@ -70,7 +70,7 @@ class FlutterOpenpay {
       "expiration_year": "$expiryYear",
       "expiration_month": "$expiryMonth",
       "cvv2": "$cvv"
-    }""");
+    }""", encoding: utf8);
 
     Map<String, dynamic> responseJson = json.decode(response.body);
     if (response.statusCode == 201) {
