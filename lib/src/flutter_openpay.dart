@@ -54,9 +54,9 @@ class FlutterOpenpay {
   }) async{
     String baseUrl = productionMode ? 'api.openpay.mx' : 'sandbox-api.openpay.mx';
 
-    String _merchantBaseUrl = '$baseUrl/v1/$merchantId';
+    String _merchantBaseUrl = '$baseUrl';
 
-    var url = Uri.https(_merchantBaseUrl, "tokens");
+    var url = Uri.https(_merchantBaseUrl, "/v1/$merchantId/tokens");
 
     String basicAuth = 'Basic ' + base64Encode(utf8.encode('$publicApiKey:'));
 
